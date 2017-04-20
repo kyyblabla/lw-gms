@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lw-gms.iml" filepath="$PROJECT_DIR$/.idea/modules/lw-gms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lw-gms_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lw-gms_main.iml" group="lw-gms" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lw-gms_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lw-gms_test.iml" group="lw-gms" />
     </modules>
   </component>
 </project>
