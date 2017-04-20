@@ -8,6 +8,7 @@ import com.kyblabla.lwgms.model.Good
 import com.kyblabla.lwgms.model.Stock
 import com.kyblabla.lwgms.service.impl.StockServiceImpl
 import groovy.test.GroovyAssert
+import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 
@@ -16,11 +17,10 @@ import org.junit.Test
  */
 class StockServiceTest extends GroovyAssert {
 
+    StockService stockService
 
-    def static StockService stockService
-
-    @BeforeClass
-    public static void before() {
+    @Before
+    public void before() {
 
         //初始化数据
         Storage.storage.add(new Stock(id: 1, amount: 100, assigned: 0, good: new Good(name: "鼠标", code: "SB", color: "黑色", effectiveDate: new Date())))

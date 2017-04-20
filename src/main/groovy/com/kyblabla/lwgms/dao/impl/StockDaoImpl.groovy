@@ -11,14 +11,13 @@ class StockDaoImpl implements StockDao {
 
     Stock getByGoodCode(String goodCode) {
         Storage.storage.find {
-            e ->
-                e.good?.code == goodCode
+            it.good?.code == goodCode
         }
     }
 
     Stock getById(Integer id) {
         Storage.storage.find {
-            e -> e.id == id
+            it.id == id
         }
     }
 
@@ -43,15 +42,14 @@ class StockDaoImpl implements StockDao {
      */
     private Integer generateId() {
         def max = Storage.storage.max {
-            e -> e.id
+            it.id
         }
         max ? max.id + 1 : 1
     }
 
     List<Stock> find(Map param) {
         def findMethod = {
-            e ->
-                (param.id && e.id == param.id) || (param.goodCode && e.good?.code == param.goodCode) || (param.goodName && e.good?.name.indexOf(param.goodName) != -1)
+              (param.id && it.id == param.id) || (param.goodCode && it.good?.code == param.goodCode) || (param.goodName && it.good?.name.indexOf(param.goodName) != -1)
         }
         Storage.storage.findAll(findMethod)
     }

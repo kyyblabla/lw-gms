@@ -75,6 +75,4 @@ class StockServiceImpl implements StockService {
     List<Stock> search(String goodName, String goodCode, Integer id) {
         stockDao.find([goodCode: goodCode, id: id, goodName: goodName])
     }
-
-
 }

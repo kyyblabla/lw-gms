@@ -8,7 +8,6 @@ import com.kyblabla.lwgms.model.Stock
  */
 interface StockDao {
 
-
     Stock getByGoodCode(String goodCode)
 
     Stock getById(Integer id)
