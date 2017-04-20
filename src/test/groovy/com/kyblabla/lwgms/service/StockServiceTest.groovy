@@ -1,10 +1,12 @@
 package com.kyblabla.lwgms.service
 
+import com.kyblabla.lwgms.dao.impl.StockDaoImpl
 import com.kyblabla.lwgms.exception.ServiceException
 import com.kyblabla.lwgms.dao.StockDao
 import com.kyblabla.lwgms.ds.Storage
 import com.kyblabla.lwgms.model.Good
 import com.kyblabla.lwgms.model.Stock
+import com.kyblabla.lwgms.service.impl.StockServiceImpl
 import groovy.test.GroovyAssert
 import org.junit.BeforeClass
 import org.junit.Test
@@ -27,7 +29,7 @@ class StockServiceTest extends GroovyAssert {
         Storage.storage.add(new Stock(id: 4, amount: 200, assigned: 20, good: new Good(name: "硬盘", code: "YP", color: "红色", effectiveDate: new Date())))
         Storage.storage.add(new Stock(id: 5, amount: 100, assigned: 20, good: new Good(name: "主板", code: "ZB", color: "无", effectiveDate: new Date())))
 
-        stockService = new StockService(stockDao: new StockDao())
+        stockService = new StockServiceImpl(stockDao: new StockDaoImpl())
 
     }
 
@@ -49,7 +51,7 @@ class StockServiceTest extends GroovyAssert {
         showList()
 
         //增加U盘库存，目前库存不存在U盘
-        def uDisk = new Good(name: "U盘", code: "UP", color: "银色", effectiveDate:new Date())
+        def uDisk = new Good(name: "U盘", code: "UP", color: "银色", effectiveDate: new Date())
         def uDiskStock = stockService.add(uDisk, 20)
         assertEquals(uDiskStock.amount, 20)
         assertEquals(uDiskStock.assigned, 0)

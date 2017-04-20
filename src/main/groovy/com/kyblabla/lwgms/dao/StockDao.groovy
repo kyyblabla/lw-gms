@@ -6,53 +6,17 @@ import com.kyblabla.lwgms.model.Stock
 /**
  * Created by hp on 2017/4/19.
  */
-class StockDao {
+interface StockDao {
 
-    Stock getByGoodCode(String goodCode) {
-        Storage.storage.find {
-            e ->
-                e.good?.code == goodCode
-        }
-    }
 
-    Stock getById(Integer id) {
-        Storage.storage.find {
-            e -> e.id == id
-        }
-    }
+    Stock getByGoodCode(String goodCode)
 
-    Stock insert(Stock stock) {
-        stock.id = generateId()
-        Storage.storage.add(stock)
-        stock
-    }
+    Stock getById(Integer id)
 
-    Stock update(Stock stock) {
-        def exitStock = getById(stock.id)
-        if (exitStock != null) {
-            exitStock = stock
-        }
-        exitStock
-    }
+    Stock insert(Stock stock)
 
-    /**
-     * 生成商品id
-     * 规则：取最大id+1
-     * @return
-     */
-    private Integer generateId() {
-        def max = Storage.storage.max {
-            e -> e.id
-        }
-        max ? max.id + 1 : 1
-    }
+    Stock update(Stock stock)
 
-    List<Stock> search(Map param) {
-        def findMethod = {
-            e ->
-                (param.id && e.id == param.id) || (param.goodCode && e.good?.code == param.goodCode) || (param.goodName && e.good?.name.indexOf(param.goodName) != -1)
-        }
-        Storage.storage.findAll(findMethod)
-    }
+    List<Stock> find(Map param)
 
 }
