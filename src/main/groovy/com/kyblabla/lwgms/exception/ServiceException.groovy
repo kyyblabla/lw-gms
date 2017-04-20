@@ -1,4 +1,4 @@
-package com.kyblabla.lwgms
+package com.kyblabla.lwgms.exception
 
 /**
  * Created by hp on 2017/4/19.

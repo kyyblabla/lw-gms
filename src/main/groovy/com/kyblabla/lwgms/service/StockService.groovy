@@ -1,7 +1,8 @@
 package com.kyblabla.lwgms.service
 
-import com.kyblabla.lwgms.ServiceException
+import com.kyblabla.lwgms.exception.ServiceException
 import com.kyblabla.lwgms.dao.StockDao
+import com.kyblabla.lwgms.model.Good
 import com.kyblabla.lwgms.model.Stock
 
 /**
@@ -11,8 +12,8 @@ class StockService {
 
     StockDao stockDao
 
-    def add(good, amount) {
-        def stock = stockDao.getByGoodCode(good.code)
+    Stock add(Good good, int amount) {
+        Stock stock = stockDao.getByGoodCode(good.code)
         if (stock == null) {
             stock = new Stock()
             stock.good = good
@@ -23,15 +24,14 @@ class StockService {
             stock.amount += amount
             stockDao.update(stock)
         }
-        stock
     }
 
     /**
      * 出库分配
      * @param goodName
      */
-    def deliveryAssign(goodCode, assigned) {
-        def stock = stockDao.getByGoodCode(goodCode)
+    Stock deliveryAssign(String goodCode, int assigned) {
+        Stock stock = stockDao.getByGoodCode(goodCode)
         if (stock == null) {
             ServiceException.exception("商品代码为${goodCode}的库存记录不存在")
         }
@@ -40,13 +40,11 @@ class StockService {
         }
         stock.assigned += assigned
         stockDao.update(stock)
-        stock
     }
 
     //出库完成
-    def deliveryFinish(goodCode, assigned) {
-
-        def stock = stockDao.getByGoodCode(goodCode)
+    Stock deliveryFinish(String goodCode, int assigned) {
+        Stock stock = stockDao.getByGoodCode(goodCode)
         if (stock == null) {
             ServiceException.exception("商品代码为${goodCode}的库存记录不存在")
         }
@@ -56,12 +54,11 @@ class StockService {
         stock.assigned -= assigned
         stock.amount -= assigned
         stockDao.update(stock)
-        stock
     }
 
     //调整库存
-    def adjustStock(good, amount) {
-        def stock = stockDao.getByGoodCode(good.code)
+    Stock adjustStock(Good good, int amount) {
+        Stock stock = stockDao.getByGoodCode(good.code)
         if (stock == null) {
             ServiceException.exception("商品代码为${good.code}的库存记录不存在")
         }
@@ -74,8 +71,8 @@ class StockService {
     }
 
     //查询
-    def search(goodName, goodCode, id) {
-        stockDao.search([goodName: goodName, goodCode: goodCode, id: id])
+    def search(String goodName, String goodCode, Integer id) {
+        stockDao.search([goodCode: goodCode, id: id, goodName: goodName])
     }
 
 
