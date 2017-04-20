@@ -1,7 +1,5 @@
 package com.kyblabla.lwgms.service
 
-import com.kyblabla.lwgms.exception.ServiceException
-import com.kyblabla.lwgms.dao.StockDao
 import com.kyblabla.lwgms.model.Good
 import com.kyblabla.lwgms.model.Stock
 

@@ -110,12 +110,15 @@ class StockServiceTest extends GroovyAssert {
 
     @Test
     public void search() throws Exception {
-        def result = stockService.search("键盘", null, null)
+        //根据商品名称搜索
+        def result = stockService.search("键", null, null)
         assertEquals(result[0].good.name, "键盘")
 
+        //根据商品编号搜索
         result = stockService.search(null, "SB", null)
         assertEquals(result[0].good.name, "鼠标")
 
+        //根据库存id搜索
         result = stockService.search(null, null, 1)
         assertEquals(result[0].good.name, "鼠标")
 
