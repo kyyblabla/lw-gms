@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kyblabla.lwgms.service.StockServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T03:04:06" hostname="hp-PC" time="0.322">
+  <properties/>
+  <testcase name="deliveryAssignAndDeliveryFinish" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.04"/>
+  <testcase name="search" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.03"/>
+  <testcase name="add" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.03"/>
+  <testcase name="adjustStock" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.218"/>
+  <testcase name="deliveryAssign" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.003"/>
+  <testcase name="deliveryFinish" classname="com.kyblabla.lwgms.service.StockServiceTest" time="0.0"/>
+  <system-out><![CDATA[--统计--
+1:鼠标:200:0
+2:键盘:100:20
+3:显示器:180:20
+4:硬盘:200:20
+5:主板:100:20
+------
+
+--统计--
+1:鼠标:200:0
+2:键盘:100:20
+3:显示器:180:20
+4:硬盘:200:20
+5:主板:100:20
+6:U盘:20:0
+------
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

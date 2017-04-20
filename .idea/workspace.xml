@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f3c345d-1572-4af5-aae1-a4d3216a1895" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/ServiceException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/dao/StockDao$_generateId_closure3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/dao/StockDao$_getByGoodCode_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/dao/StockDao$_getById_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/dao/StockDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/ds/Storage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/model/Good.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/model/Stock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/service/StockService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/com/kyblabla/lwgms/service/StockServiceTest$_deliveryAssign_closure2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/com/kyblabla/lwgms/service/StockServiceTest$_showList_closure1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/com/kyblabla/lwgms/service/StockServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/classes/junit.framework.TestSuite$1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/css/base-style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/js/report.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/reports/tests/packages/junit.framework.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/TEST-junit.framework.TestSuite$1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterPath="" />
+    <list default="true" id="9f3c345d-1572-4af5-aae1-a4d3216a1895" name="Default" comment="修改def为具体类型">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/dao/StockDao$_search_closure4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/com/kyblabla/lwgms/exception/ServiceException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/test/com/kyblabla/lwgms/service/StockServiceTest$_adjustStock_closure3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/reports/tests/classes/com.kyblabla.lwgms.service.StockServiceTest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/reports/tests/packages/com.kyblabla.lwgms.service.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/test-results/TEST-com.kyblabla.lwgms.service.StockServiceTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/dao/StockDao.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/dao/StockDao.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/model/Good.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/model/Good.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/model/Stock.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/model/Stock.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/service/StockService.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/service/StockService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/kyblabla/lwgms/service/StockServiceTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/kyblabla/lwgms/service/StockServiceTest.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/ServiceException.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/com/kyblabla/lwgms/exception/ServiceException.groovy" />
     </list>
     <ignored path="lw-gms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,6 +60,10 @@
               <PATH_ELEMENT>
                 <option name="myItemId" value="lw-gms" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Run Configurations" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.RunConfigurationsNode" />
               </PATH_ELEMENT>
             </PATH>
             <PATH>
@@ -132,6 +114,16 @@
               <PATH_ELEMENT>
                 <option name="myItemId" value="build" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="lw-gms" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
               </PATH_ELEMENT>
             </PATH>
           </tree_state>
@@ -201,8 +193,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="88">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -666,6 +658,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25747126" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -677,7 +670,7 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.lw-gms [clean]">
+  <component name="RunManager" selected="Gradle.lw-gms [test]">
     <configuration default="false" name="StockServiceTest.adjustStock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1115,8 +1108,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.lw-gms [clean]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.lw-gms [test]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.lw-gms [test]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.lw-gms [clean]" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.StockServiceTest.search" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.StockServiceTest.deliveryFinish" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.StockServiceTest.adjustStock" />
@@ -1137,14 +1130,19 @@
       <option name="presentableId" value="Default" />
       <updated>1492585377806</updated>
       <workItem from="1492585380690" duration="18203000" />
-      <workItem from="1492656846019" duration="512000" />
+      <workItem from="1492656846019" duration="736000" />
     </task>
+    <task id="LOCAL-00001" summary="修改def为具体类型">
+      <created>1492657423258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492657423258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="lw-gms_[test] - 2017.04.20 at 10h 44m 14s.xml">
-      <configuration name="lw-gms [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="lw-gms_[test] - 2017.04.20 at 10h 44m 37s.xml">
       <configuration name="lw-gms [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -1172,15 +1170,19 @@
     <history-entry file="lw-gms_[test] - 2017.04.20 at 10h 50m 12s.xml">
       <configuration name="lw-gms [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="lw-gms_[test] - 2017.04.20 at 11h 04m 07s.xml">
+      <configuration name="lw-gms [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18715000" />
+    <option name="totallyTimeSpent" value="18939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22664835" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36766624" sideWeight="0.5075" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1196,7 +1198,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.4832905" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22664835" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1215,6 +1216,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改def为具体类型" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改def为具体类型" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1538,8 +1543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="88">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
