@@ -1109,7 +1109,7 @@
       <updated>1492585377806</updated>
       <workItem from="1492585380690" duration="18203000" />
       <workItem from="1492656846019" duration="1227000" />
-      <workItem from="1492658145806" duration="671000" />
+      <workItem from="1492658145806" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="修改def为具体类型">
       <created>1492657423258</created>
@@ -1146,7 +1146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492658435339</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="再次去除ide文件">
+      <created>1492658826504</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1492658826504</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1182,7 +1189,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20101000" />
+    <option name="totallyTimeSpent" value="20161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
