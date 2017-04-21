@@ -8,7 +8,7 @@ import com.kyblabla.lwgms.model.Stock
  */
 interface StockDao {
 
-    Stock getByGoodCode(String goodCode)
+    Stock getByGoodsCode(String goodsCode)
 
     Stock getById(Integer id)
 
@@ -17,5 +17,7 @@ interface StockDao {
     Stock update(Stock stock)
 
     List<Stock> find(Map param)
+
+    List<Stock> find(String key)
 
 }

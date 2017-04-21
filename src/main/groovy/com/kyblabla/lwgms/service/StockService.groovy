@@ -1,6 +1,6 @@
 package com.kyblabla.lwgms.service
 
-import com.kyblabla.lwgms.model.Good
+import com.kyblabla.lwgms.model.Goods
 import com.kyblabla.lwgms.model.Stock
 
 /**
@@ -8,14 +8,16 @@ import com.kyblabla.lwgms.model.Stock
  */
 interface StockService {
 
-    Stock add(Good good, int amount)
+    Stock addStock(Goods goods, int amount)
 
-    Stock deliveryAssign(String goodCode, int assigned)
+    Stock deliveryAssign(String goodsCode, int assigned)
 
-    Stock deliveryFinish(String goodCode, int assigned)
+    Stock deliveryFinish(String goodsCode, int assigned)
 
-    Stock adjustStock(Good good, int amount)
+    Stock adjustStock(String goodsCode, int adjustAmount)
 
-    List<Stock> search(String goodName, String goodCode, Integer id)
+    List<Stock> search(String key)
+
+    Stock getById(Integer id)
 
 }

@@ -3,15 +3,17 @@ package com.kyblabla.lwgms.dao.impl
 import com.kyblabla.lwgms.dao.StockDao
 import com.kyblabla.lwgms.ds.Storage
 import com.kyblabla.lwgms.model.Stock
+import org.springframework.stereotype.Component
 
 /**
  * Created by hp on 2017/4/20.
  */
+@Component("StockDao")
 class StockDaoImpl implements StockDao {
 
-    Stock getByGoodCode(String goodCode) {
+    Stock getByGoodsCode(String goodsCode) {
         Storage.storage.find {
-            it.good?.code == goodCode
+            it.goods?.code == goodsCode
         }
     }
 
@@ -49,9 +51,15 @@ class StockDaoImpl implements StockDao {
 
     List<Stock> find(Map param) {
         def findMethod = {
-              (param.id && it.id == param.id) || (param.goodCode && it.good?.code == param.goodCode) || (param.goodName && it.good?.name.indexOf(param.goodName) != -1)
+            (param.id && it.id == param.id) || (param.goodsCode && it.goods?.code == param.goodsCode) || (param.goodsName && it.goods?.name.indexOf(param.goodsName) != -1)
         }
         Storage.storage.findAll(findMethod)
     }
 
+    List<Stock> find(String key) {
+        def findMethod = {
+            key == it.id || key == it.goods?.code || it.goods?.color == key || (it.goods?.name.indexOf(key) != -1)
+        }
+        Storage.storage.findAll(findMethod)
+    }
 }
