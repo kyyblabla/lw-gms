@@ -4,6 +4,7 @@ import com.kyblabla.lwgms.exception.ServiceException
 import com.kyblabla.lwgms.ds.Storage
 import com.kyblabla.lwgms.model.Goods
 import com.kyblabla.lwgms.model.Stock
+import groovy.json.JsonOutput
 import groovy.test.GroovyAssert
 import org.junit.Before
 import org.junit.Test
@@ -32,10 +33,9 @@ class StockServiceTest extends GroovyAssert {
         Storage.storage.add(new Stock(id: 4, amount: 200, assigned: 20, effectiveDate: new Date(), goods: new Goods(name: "硬盘", code: "YP", color: "红色")))
         Storage.storage.add(new Stock(id: 5, amount: 100, assigned: 20, effectiveDate: new Date(), goods: new Goods(name: "主板", code: "ZB", color: "无")))
 
-
     }
 
-    def static showList() {
+    static showList() {
         println "--统计--"
         Storage.storage.forEach {
             e ->
@@ -43,6 +43,17 @@ class StockServiceTest extends GroovyAssert {
         }
         println "------\n"
     }
+
+//    @Test
+//    void pd() {
+//        def jsonOutput = new JsonOutput()
+//        def result = jsonOutput.prettyPrint(jsonOutput.toJson(Storage.storage))
+//        def file=new File("src/main/resources/db.json");
+//        def printWriter = file.newPrintWriter()
+//        printWriter.write(result)
+//        printWriter.flush()
+//        printWriter.close()
+//    }
 
     @Test
     void add() throws Exception {

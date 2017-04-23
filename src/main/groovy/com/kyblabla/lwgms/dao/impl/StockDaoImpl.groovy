@@ -58,6 +58,9 @@ class StockDaoImpl implements StockDao {
 
     List<Stock> find(String key) {
         def findMethod = {
+            if(!key){
+                true
+            }
             key == it.id || key == it.goods?.code || it.goods?.color == key || (it.goods?.name.indexOf(key) != -1)
         }
         Storage.storage.findAll(findMethod)

@@ -1,0 +1,57 @@
+[
+    {
+        "effectiveDate": "2017-04-23T05:55:51+0000",
+        "assigned": 0,
+        "goods": {
+            "code": "SB",
+            "color": "\u9ed1\u8272",
+            "name": "\u9f20\u6807"
+        },
+        "id": 1,
+        "amount": 100
+    },
+    {
+        "effectiveDate": "2017-04-23T05:55:51+0000",
+        "assigned": 20,
+        "goods": {
+            "code": "JP",
+            "color": "\u9ed1\u8272",
+            "name": "\u952e\u76d8"
+        },
+        "id": 2,
+        "amount": 100
+    },
+    {
+        "effectiveDate": "2017-04-23T05:55:51+0000",
+        "assigned": 0,
+        "goods": {
+            "code": "XSQ",
+            "color": "\u94f6\u8272",
+            "name": "\u663e\u793a\u5668"
+        },
+        "id": 3,
+        "amount": 200
+    },
+    {
+        "effectiveDate": "2017-04-23T05:55:51+0000",
+        "assigned": 20,
+        "goods": {
+            "code": "YP",
+            "color": "\u7ea2\u8272",
+            "name": "\u786c\u76d8"
+        },
+        "id": 4,
+        "amount": 200
+    },
+    {
+        "effectiveDate": "2017-04-23T05:55:51+0000",
+        "assigned": 20,
+        "goods": {
+            "code": "ZB",
+            "color": "\u65e0",
+            "name": "\u4e3b\u677f"
+        },
+        "id": 5,
+        "amount": 100
+    }
+]

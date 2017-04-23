@@ -26,7 +26,8 @@ repositories {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.codehaus.groovy:groovy-all:2.3.11')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'com.alibaba:fastjson:1.2.31'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
